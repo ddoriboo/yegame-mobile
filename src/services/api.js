@@ -3,8 +3,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 // 백엔드 API URL - 환경에 따라 변경 필요
 const API_BASE_URL = __DEV__
-  ? 'http://localhost:3000/api'  // 개발 환경
-  : 'https://your-railway-app.up.railway.app/api';  // 프로덕션
+  ? 'https://yegam.ai.kr/api'  // 개발 환경 (Railway 백엔드 사용)
+  : 'https://yegam.ai.kr/api';  // 프로덕션
 
 const api = axios.create({
   baseURL: API_BASE_URL,
